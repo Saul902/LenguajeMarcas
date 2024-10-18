@@ -1,1 +1,6 @@
-<!ELEMENT notas EMPTY>
+<!ELEMENT notas (alumno)>
+<!ELEMENT alumno (nombre, apellidos, (dni|nie))>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT nie (#PCDATA)>

@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE notas SYSTEM "notas.dtd">
-<notas></notas>
+<notas>
+    <alumno>
+        <nombre>Saul</nombre>
+        <apellidos>Ruiz</apellidos>
+        <dni>3998682T</dni>
+    </alumno>
+</notas>

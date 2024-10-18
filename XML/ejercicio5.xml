@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <cv lang="es">
         <nombre>Saul</nombre>
-        <apellidos>Ruiz Manzano</apellidos>
+        <apellidos>Ruiz</apellidos>
         <informacion_contacto>
-            <numero_telefono>+34 644 87 19 72</numero_telefono>
-            <correo>saulruiz968@gmail.com</correo>
-            <fecha_nacimiento>15/02/03</fecha_nacimiento>
+            <numero_telefono>+34 653 72 73 12</numero_telefono>
+            <correo>saul@gmail.com</correo>
+            <fecha_nacimiento>25/01/01</fecha_nacimiento>
         </informacion_contacto>
         <sobre_mi>Me considero una persona responsable, eficiente, trabajadora y con ganas de aprender.</sobre_mi>
         <experiencia_trabajo>
             <trabajo>
-                <nombre_trabajo>Les Freses</nombre_trabajo>
-                <ubicacion_trabajo>Jesús Pobre,España</ubicacion_trabajo>
+                <nombre_trabajo>1trabajo</nombre_trabajo>
+                <ubicacion_trabajo>ubicacion</ubicacion_trabajo>
                 <fecha_trabajo>2022</fecha_trabajo>
             </trabajo>
         </experiencia_trabajo>
         <educacion>
             <centro>
-                <nombre_centro>IES Teulada</nombre_centro>
-                <curso>Técnico en Aceites y Vino</curso>
-                <ubicacion_centro>Teulada,Alicante,España</ubicacion_centro>
+                <nombre_centro>centro</nombre_centro>
+                <curso>curso</curso>
+                <ubicacion_centro>ubicacion</ubicacion_centro>
                 <fecha_centro>2021-2023</fecha_centro>
             </centro>
             <centro>
-                <nombre_centro>IES Teulada</nombre_centro>
-                <curso>Educación Segundaria Obligatoria</curso>
-                <ubicacion_centro>Teulada,Alicante,España</ubicacion_centro>
+                <nombre_centro>centro</nombre_centro>
+                <curso>curso</curso>
+                <ubicacion_centro>ubicacion</ubicacion_centro>
                 <fecha_centro>2015-2020</fecha_centro>
             </centro>
         </educacion>
