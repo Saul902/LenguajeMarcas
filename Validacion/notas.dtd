@@ -1,6 +1,7 @@
-<!ELEMENT notas (alumno)>
-<!ELEMENT alumno (nombre, apellidos, (dni|nie))>
+<!ELEMENT notas (alumno+)>
+<!ELEMENT alumno (nombre, apellidos)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT apellidos (#PCDATA)>
-<!ELEMENT dni (#PCDATA)>
-<!ELEMENT nie (#PCDATA)>
+<!ATTLIST alumno genero (hombre|mujer|nobinario) #REQUIRED
+                dni ID #REQUIRED
+                amigos IDREFS #IMPLIED><!-- fk -->
