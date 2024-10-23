@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE notas SYSTEM "notas.dtd">
 <notas>
-    <alumno>
+    <alumno dni="_1a" genero="hombre">
         <nombre>Saul</nombre>
         <apellidos>Ruiz</apellidos>
-        <dni>3998682T</dni>
+    </alumno>
+    <alumno dni="_1b" genero="mujer">
+        <nombre>Saula</nombre>
+        <apellidos>Ruiz</apellidos>
     </alumno>
 </notas>
