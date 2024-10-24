@@ -33,7 +33,7 @@
             <name>Ender pearl</name>
             <type>consumible</type>
             <rarity>épico</rarity>
-            <damage>10</damage>
+            <damage>5</damage>
             <description>Una perla que cuando la tiras te teletransporta a donde aterrice</description>
         </item>
     </minecraftItems>
