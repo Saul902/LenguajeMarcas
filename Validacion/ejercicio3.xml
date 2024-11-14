@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escena SYSTEM "ejercicio3.dtd">
+<escena>
+    <rectangulo>
+        <posicion>400</posicion>
+        <altura>150</altura>
+        <ancho>200</ancho>
+    </rectangulo>
+    <circunferencia>
+        <posicion>200</posicion>
+        <radio>20</radio>
+    </circunferencia>
+    <linea>
+        <posicion_origen>100</posicion_origen>
+        <posicion_destino>300</posicion_destino>
+    </linea>
+</escena>
