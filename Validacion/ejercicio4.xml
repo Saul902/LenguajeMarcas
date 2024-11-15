@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tresenraya SYSTEM "ejercicio4.dtd">
+<tresenraya>
+    <partida>
+        <turno id_turno="t1">
+            <jugador id="j1t1">Saul</jugador>
+            <ficha>X</ficha>
+            <posicion>1</posicion>
+        </turno>
+        <turno id_turno="t2">
+            <jugador id="j2t2">Santi</jugador>
+            <ficha>O</ficha>
+            <posicion>5</posicion>
+        </turno>
+        <turno id_turno="t3">
+            <jugador id="j1t3">Saul</jugador>
+            <ficha>X</ficha>
+            <posicion>9</posicion>
+        </turno>
+        <turno id_turno="t4">
+            <jugador id="j2t4">Santi</jugador>
+            <ficha>O</ficha>
+            <posicion>3</posicion>
+        </turno>
+    </partida>
+</tresenraya>

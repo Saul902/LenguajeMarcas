@@ -1,0 +1,9 @@
+<!ELEMENT tresenraya (partida)>
+<!ELEMENT partida (turno*)>
+<!ELEMENT turno (jugador,ficha,posicion)>
+<!ELEMENT jugador (#PCDATA)>
+<!ELEMENT ficha (#PCDATA)>
+<!ELEMENT posicion (#PCDATA)>
+
+<!ATTLIST turno id_turno ID #REQUIRED>
+<!ATTLIST jugador id ID #REQUIRED>
