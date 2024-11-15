@@ -1,0 +1,26 @@
+<!ELEMENT cv (nombre,apellidos,informacion_contacto,sobre_mi,experiencia_trabajo,educacion,idiomas)>
+<!ELEMENT informacion_contacto (numero_telefono,correo,fecha_nacimiento)>
+<!ELEMENT experiencia_trabajo (trabajo*)>
+<!ELEMENT trabajo (nombre_trabajo,ubicacion_trabajo,fecha_trabajo)>
+<!ELEMENT educacion (centro*)>
+<!ELEMENT centro (nombre_centro,curso,ubicacion_centro,fecha_centro)>
+<!ELEMENT idiomas (idioma+)>
+<!ELEMENT idioma (nombre_idioma,nivel)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT numero_telefono (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT sobre_mi (#PCDATA)>
+<!ELEMENT nombre_trabajo (#PCDATA)>
+<!ELEMENT ubicacion_trabajo (#PCDATA)>
+<!ELEMENT fecha_trabajo (#PCDATA)>
+<!ELEMENT nombre_centro (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT ubicacion_centro (#PCDATA)>
+<!ELEMENT fecha_centro (#PCDATA)>
+<!ELEMENT nombre_idioma (#PCDATA)>
+<!ELEMENT nivel (#PCDATA)>
+
+<!ATTLIST cv lang (es|en) #REQUIRED>
