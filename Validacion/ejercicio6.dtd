@@ -1,0 +1,35 @@
+<!ELEMENT listado_tickets (ticket*)>
+<!ELEMENT ticket (membrete,cabecera_tickets,lineas_tickets,resumen_tickets)>
+<!ELEMENT membrete (nombre_membrete,pagina_web,sucursal,telefonos)>
+<!ELEMENT sucursal (nombre_sucursal,poblacion_sucursal)>
+<!ELEMENT cabecera_tickets (fecha_tickets,hora_tickets,nombre_empleado)>
+<!ELEMENT lineas_tickets (linea_tickets*)>
+<!ELEMENT linea_tickets (cantidad_unidades,descripcion,precio_unitario,cantidad_vendidos,importe_linea)>
+<!ELEMENT resumen_tickets (importe_total)>
+
+<!ELEMENT nombre_membrete (#PCDATA)>
+<!ELEMENT pagina_web (#PCDATA)>
+<!ELEMENT nombre_sucursal (#PCDATA)>
+<!ELEMENT poblacion_sucursal (#PCDATA)>
+<!ELEMENT telefonos (#PCDATA)>
+<!ELEMENT fecha_tickets (#PCDATA)>
+<!ELEMENT hora_tickets (#PCDATA)>
+<!ELEMENT nombre_empleado (#PCDATA)>
+<!ELEMENT cantidad_unidades (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT importe_linea (#PCDATA)>
+<!ELEMENT cantidad_vendidos (#PCDATA)>
+<!ELEMENT importe_total (#PCDATA)>
+
+<!ATTLIST listado_tickets lang (es|en) #REQUIRED>
+<!ATTLIST ticket num_ticket ID #REQUIRED>
+<!ATTLIST membrete cif CDATA #REQUIRED>
+<!ATTLIST sucursal codigo_sucursal CDATA #REQUIRED>
+<!ATTLIST sucursal codigo_postal CDATA #REQUIRED>
+<!ATTLIST telefonos tipo (fijo|movil) #REQUIRED>
+<!ATTLIST cabecera_tickets num_cabecera CDATA #REQUIRED>
+<!ATTLIST linea_tickets codigo_articulo CDATA #REQUIRED>
+<!ATTLIST precio_unitario oferta (si|no) #REQUIRED>
+<!ATTLIST resumen_tickets forma_pago (efectivo|tarjeta|bizum) #REQUIRED>
+<!ATTLIST listado_tickets lang (es|en) #REQUIRED>

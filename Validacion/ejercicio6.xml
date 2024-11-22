@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listado_tickets SYSTEM "ejercicio6.dtd">
+<listado_tickets lang="es">
+    <ticket num_ticket="T1">
+        <membrete cif="m1">
+            <nombre_membrete>empresa1</nombre_membrete>
+            <pagina_web>empresa1.com</pagina_web>
+            <sucursal codigo_sucursal="A1" codigo_postal="CP37124">
+                <nombre_sucursal>sucursal1</nombre_sucursal>
+                <poblacion_sucursal>españa</poblacion_sucursal>
+            </sucursal>
+            <telefonos tipo="movil">+34 654 494 847</telefonos>
+        </membrete>
+        <cabecera_tickets num_cabecera="C1">
+            <fecha_tickets>19/12/24</fecha_tickets>
+            <hora_tickets>19:23</hora_tickets>
+            <nombre_empleado>Saul Ruiz</nombre_empleado>
+        </cabecera_tickets>
+        <lineas_tickets>
+            <linea_tickets codigo_articulo="A1">
+                <cantidad_unidades>130</cantidad_unidades>
+                <descripcion>Un articulo bueno</descripcion>
+                <precio_unitario oferta="si">2,50€</precio_unitario>
+                <cantidad_vendidos>1</cantidad_vendidos>
+                <importe_linea>1 x 2,50</importe_linea>
+            </linea_tickets>
+            <linea_tickets codigo_articulo="A2">
+                <cantidad_unidades>50</cantidad_unidades>
+                <descripcion>Un articulo decente</descripcion>
+                <precio_unitario oferta="no">55€</precio_unitario>
+                <cantidad_vendidos>2</cantidad_vendidos>
+                <importe_linea>2 x 55</importe_linea>
+            </linea_tickets>
+            <linea_tickets codigo_articulo="A3">
+                <cantidad_unidades>20</cantidad_unidades>
+                <descripcion>Un articulo caro</descripcion>
+                <precio_unitario oferta="no">2000€</precio_unitario>
+                <cantidad_vendidos>1</cantidad_vendidos>
+                <importe_linea>1 x 2000</importe_linea>
+            </linea_tickets>
+        </lineas_tickets>
+        <resumen_tickets forma_pago="tarjeta">
+            <importe_total>2012,50€</importe_total>
+        </resumen_tickets>
+    </ticket>
+    <ticket num_ticket="T2">
+        <membrete cif="m2">
+            <nombre_membrete>empresa2</nombre_membrete>
+            <pagina_web>empresa2.com</pagina_web>
+            <sucursal codigo_sucursal="A2" codigo_postal="CP37114">
+                <nombre_sucursal>sucursal2</nombre_sucursal>
+                <poblacion_sucursal>españa</poblacion_sucursal>
+            </sucursal>
+            <telefonos tipo="fijo">+34 654 494 847</telefonos>
+        </membrete>
+        <cabecera_tickets num_cabecera="T2">
+            <fecha_tickets>9/12/24</fecha_tickets>
+            <hora_tickets>20:13</hora_tickets>
+            <nombre_empleado>Santiago Garcia</nombre_empleado>
+        </cabecera_tickets>
+        <lineas_tickets>
+            <linea_tickets codigo_articulo="A1">
+                <cantidad_unidades>130</cantidad_unidades>
+                <descripcion>Un articulo bueno</descripcion>
+                <precio_unitario oferta="si">2,50€</precio_unitario>
+                <cantidad_vendidos>1</cantidad_vendidos>
+                <importe_linea>1 x 2,50</importe_linea>
+            </linea_tickets>
+            <linea_tickets codigo_articulo="A4">
+                <cantidad_unidades>13</cantidad_unidades>
+                <descripcion>Un articulo malo</descripcion>
+                <precio_unitario oferta="si">30€</precio_unitario>
+                <cantidad_vendidos>5</cantidad_vendidos>
+                <importe_linea>5 x 30</importe_linea>
+            </linea_tickets>
+            <linea_tickets codigo_articulo="A5">
+                <cantidad_unidades>10000</cantidad_unidades>
+                <descripcion>Un articulo barato</descripcion>
+                <precio_unitario oferta="no">1€</precio_unitario>
+                <cantidad_vendidos>32</cantidad_vendidos>
+                <importe_linea>32 x 1</importe_linea>
+            </linea_tickets>
+        </lineas_tickets>
+        <resumen_tickets forma_pago="efectivo">
+            <importe_total>184,50€</importe_total>
+        </resumen_tickets>
+    </ticket>
+</listado_tickets>
