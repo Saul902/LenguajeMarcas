@@ -1,0 +1,40 @@
+<!ELEMENT listado_facturas (membrete,datos_clientes,productos,factura*)>
+<!ELEMENT membrete (razon_social,direccion,poblacion,telefono,email)>
+<!ELEMENT datos_clientes (cliente*)>
+<!ELEMENT cliente (nombre_cliente,direccion_cliente,poblacion_cliente)>
+<!ELEMENT productos (producto*)>
+<!ELEMENT producto (descripcion,precio,iva)>
+<!ELEMENT factura (membrete_factura,cliente_factura,productos_factura,fecha_emision,resumen)>
+<!ELEMENT productos_factura (producto_factura*)>
+<!ELEMENT producto_factura (cantidad)>
+<!ELEMENT resumen (descuento?)>
+
+<!ELEMENT razon_social (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT nombre_cliente (#PCDATA)>
+<!ELEMENT direccion_cliente (#PCDATA)>
+<!ELEMENT poblacion_cliente (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT membrete_factura EMPTY>
+<!ELEMENT cliente_factura EMPTY>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT fecha_emision (#PCDATA)>
+<!ELEMENT descuento (#PCDATA)>
+
+<!ATTLIST listado_facturas lang (es|en) #REQUIRED>
+<!ATTLIST factura num_factura ID #REQUIRED>
+<!ATTLIST membrete cif ID #REQUIRED>
+<!ATTLIST membrete codigo_postal CDATA #REQUIRED>
+<!ATTLIST cliente id_cliente ID #REQUIRED>
+<!ATTLIST cliente dni CDATA #REQUIRED>
+<!ATTLIST cliente codigo_postal CDATA #REQUIRED>
+<!ATTLIST producto codigo_producto ID #REQUIRED>
+<!ATTLIST membrete_factura cif IDREF #REQUIRED>
+<!ATTLIST cliente_factura id_cliente IDREF #REQUIRED>
+<!ATTLIST producto_factura codigo_producto IDREF #REQUIRED>
+<!ATTLIST resumen forma_pago (efectivo|tarjeta|cheque|transferencia) #REQUIRED>

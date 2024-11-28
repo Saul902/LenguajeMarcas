@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listado_facturas SYSTEM "ejercicio7.dtd">
+<listado_facturas lang="es">
+    <membrete cif="m1" codigo_postal="37264">
+        <razon_social>La razon social</razon_social>
+        <direccion>Calle del membrete</direccion>
+        <poblacion>Poblacion</poblacion>
+        <telefono>+34 677858535</telefono>
+        <email>membrete@gmail.com</email>
+    </membrete>
+    <datos_clientes>
+        <cliente id_cliente="c1" dni="47387384M" codigo_postal="37345">
+            <nombre_cliente>Saul</nombre_cliente>
+            <direccion_cliente>Calle del cliente</direccion_cliente>
+            <poblacion_cliente>Poblacion cliente</poblacion_cliente>
+        </cliente>
+        <cliente id_cliente="c2" dni="57334668N" codigo_postal="37115">
+            <nombre_cliente>Santi</nombre_cliente>
+            <direccion_cliente>Calle del cliente</direccion_cliente>
+            <poblacion_cliente>Poblacion cliente</poblacion_cliente>
+        </cliente>
+    </datos_clientes>
+    <productos>
+        <producto codigo_producto="p1">
+            <descripcion>Producto1</descripcion>
+            <precio>2,50€</precio>
+            <iva>21%</iva>
+        </producto>
+        <producto codigo_producto="p2">
+            <descripcion>Producto2</descripcion>
+            <precio>20€</precio>
+            <iva>21%</iva>
+        </producto>
+        <producto codigo_producto="p3">
+            <descripcion>Producto3</descripcion>
+            <precio>50€</precio>
+            <iva>21%</iva>
+        </producto>
+        <producto codigo_producto="p4">
+            <descripcion>Producto4</descripcion>
+            <precio>70€</precio>
+            <iva>21%</iva>
+        </producto>
+        <producto codigo_producto="p5">
+            <descripcion>Producto5</descripcion>
+            <precio>1€</precio>
+            <iva>21%</iva>
+        </producto>
+    </productos>
+    <factura num_factura="f1">
+        <membrete_factura cif="m1"/>
+        <cliente_factura id_cliente="c1"/>
+        <productos_factura>
+            <producto_factura codigo_producto="p1">
+                <cantidad>3</cantidad>
+            </producto_factura>
+            <producto_factura codigo_producto="p2">
+                <cantidad>2</cantidad>
+            </producto_factura>
+            <producto_factura codigo_producto="p3">
+                <cantidad>1</cantidad>
+            </producto_factura>
+        </productos_factura>
+        <fecha_emision>13/12/20</fecha_emision>
+        <resumen forma_pago="cheque">
+            <descuento>10%</descuento>
+        </resumen>
+    </factura>
+    <factura num_factura="f2">
+        <membrete_factura cif="m1"/>
+        <cliente_factura id_cliente="c2"/>
+        <productos_factura>
+            <producto_factura codigo_producto="p3">
+                <cantidad>30</cantidad>
+            </producto_factura>
+            <producto_factura codigo_producto="p4">
+                <cantidad>20</cantidad>
+            </producto_factura>
+            <producto_factura codigo_producto="p5">
+                <cantidad>10</cantidad>
+            </producto_factura>
+        </productos_factura>
+        <fecha_emision>15/12/20</fecha_emision>
+        <resumen forma_pago="transferencia">
+            <descuento>5%</descuento>
+        </resumen>
+    </factura>
+</listado_facturas>
