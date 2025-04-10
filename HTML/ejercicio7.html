@@ -3,41 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saul Ruiz">
+    <meta name="keywords" content="html, css, javascript">
     <title>ejercicio7.html</title>
 </head>
 <body>
-    <form method="get" action="ejercicio7.html">
-        <label for="nombre">Nombre:</label>
-        <input id="nombre" name="nombre" type="text" value="saul" required><br></br>
-        <label for="correo">Correo electrónico:</label>
-        <input id="correo" name="correo" type="email" value="saulruiz968@gmail.com" required><br></br>
-        <label for="url">URL:</label>
-        <input id="url" name="url" type="url" value="Escribe la URL de tu página"><br></br>
-        <label for="fecha">Fecha:</label>
-        <input id="fecha" name="fecha" type="date"><br></br>
-        <label for="genero">Género:</label><br></br>
-        <input id="masculino" name="genero" type="radio">
-        <label for="masculino">Masculino</label><br></br>
-        <input id="femenino" name="genero" type="radio">
-        <label for="femenino">Femenino</label><br></br>
-        <label for="numhijos">Número de hijos:</label><br></br>
-        <input id="ninguno" name="numhijos" type="radio">
-        <label for="ninguno">ninguno</label>
-        <input id="uno" name="numhijos" type="radio">
-        <label for="uno">uno</label>
-        <input id="dos" name="numhijos" type="radio">
-        <label for="dos">dos</label>
-        <input id="masdos" name="numhijos" type="radio">
-        <label for="masdos">mas de 2</label><br></br>
-        <label for="numero">Número (min -10 max 10):</label>
-        <input id="numero" name="numero" type="number" min="-10" max="10"><br></br>
-        <label for="telefono">Teléfono:</label>
-        <input id="telefono" name="telefono" type="tel" pattern="[0-9]{9}"><br></br>
-        <label for="termino">Término de búsqueda:</label>
-        <input id="termino" name="termino" type="text" value="10683458"><br></br>
-        <label for="color">Color favorito:</label>
-        <input id="color" name="color" type="color"><br></br>
-        <input type="submit" value="Enviar">
-    </form>
+    <div>
+        <form action="ejercicio7.html" method="get">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Saul" autofocus tabindex="1" required="true"/>
+            </p>
+            <p>
+                <label for="correo">Correo electrónico:</label>
+                <input id="correo" name="correo" type="email" placeholder="saulruiz968@gmail.com" tabindex="2" required="true"/>
+            </p>
+            <p>
+                <label for="url">URL:</label>
+                <input id="url" name="url" type="url" placeholder="Escribe la URL de tu página" tabindex="3"/>
+            </p>
+            <p>
+                <label for="fecha">Fecha:</label>
+                <input id="fecha" name="fecha" type="date" tabindex="4"/>
+            </p>
+            <p>
+                <label for="genero">Género:</label><br>
+                <input id="masculino" name="genero" type="radio" value="m" tabindex="5"/>
+                <label for="masculino">Masculino</label><br>
+                <input id="femenino" name="genero" type="radio" value="f" tabindex="6"/>
+                <label for="femenino">Femenino</label>
+            </p>
+            <p>
+                <label for="numhijos">Número de hijos:</label><br>
+                <input id="ninguno" name="numhijos" type="radio" value="0" tabindex="7"/>
+                <label for="ninguno">ninguno</label>
+                <input id="uno" name="numhijos" type="radio" value="1" tabindex="8"/>
+                <label for="uno">uno</label>
+                <input id="dos" name="numhijos" type="radio" value="2" tabindex="9"/>
+                <label for="dos">dos</label>
+                <input id="masdos" name="numhijos" type="radio" value="mas2" tabindex="10"/>
+                <label for="masdos">mas de 2</label>
+            </p>
+            <p>
+                <label for="numero">Número (min -10 max 10):</label>
+                <input id="numero" name="numero" type="number" min="-10" max="10" tabindex="11"/>
+            </p>
+            <p>
+                <label for="telefono">Teléfono:</label>
+                <input id="telefono" name="telefono" type="tel" pattern="[0-9]{9}" tabindex="12" required="true"/>
+            </p>
+            <p>
+                <label for="termino">Término de búsqueda:</label>
+                <input id="termino" name="termino" type="text" placeholder="10683458" tabindex="13" required="true"/>
+            </p>
+            <p>
+                <label for="color">Color favorito:</label>
+                <input id="color" name="color" type="color" tabindex="14"/>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" tabindex="15"/>
+            </p>
+        </form>
+    </div>
 </body>
 </html>
